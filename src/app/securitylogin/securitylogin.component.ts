@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { ApiService } from '../api.service';
 
 @Component({
-  selector: 'app-emplogin',
-  templateUrl: './emplogin.component.html',
-  styleUrls: ['./emplogin.component.css']
+  selector: 'app-securitylogin',
+  templateUrl: './securitylogin.component.html',
+  styleUrls: ['./securitylogin.component.css']
 })
-export class EmploginComponent {
+export class SecurityloginComponent {
   email=""
   password=""
   constructor(private api:ApiService,private route:Router){}
@@ -28,7 +28,7 @@ export class EmploginComponent {
           console.log(userId)
           localStorage.setItem("userinfo",userId)
           //alert("Valid credential")
-          this.route.navigate(['/empviewprofile'])
+          this.route.navigate(['/securityviewprofile'])
           
         }
       }

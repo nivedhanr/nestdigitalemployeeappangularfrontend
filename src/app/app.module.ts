@@ -17,7 +17,11 @@ import { Navadmin2Component } from './navadmin2/navadmin2.component';
 import { DeleteempComponent } from './deleteemp/deleteemp.component';
 import { ViewallempComponent } from './viewallemp/viewallemp.component';
 import { ViewallsecurityComponent } from './viewallsecurity/viewallsecurity.component';
-import { EmploginComponent } from './emplogin/emplogin.component'
+import { EmploginComponent } from './emplogin/emplogin.component';
+import { SecurityloginComponent } from './securitylogin/securitylogin.component';
+import { EmpviewprofileComponent } from './empviewprofile/empviewprofile.component';
+import { SecurityviewprofileComponent } from './securityviewprofile/securityviewprofile.component';
+import { NavemployeeComponent } from './navemployee/navemployee.component'
 const myRoute:Routes=[
   {
     path:"",
@@ -61,6 +65,18 @@ component:NavadminComponent
 {
 path:"emplogin",
 component:EmploginComponent
+},
+{
+  path:"securitylogin",
+  component:SecurityloginComponent
+},
+{
+  path:"empviewprofile",
+  component:EmpviewprofileComponent
+},
+{
+  path:"securityviewprofile",
+  component:SecurityviewprofileComponent
 }
 
 ]
@@ -78,7 +94,11 @@ component:EmploginComponent
     DeleteempComponent,
     ViewallempComponent,
     ViewallsecurityComponent,
-    EmploginComponent
+    EmploginComponent,
+    SecurityloginComponent,
+    EmpviewprofileComponent,
+    SecurityviewprofileComponent,
+    NavemployeeComponent
   ],
   imports: [
     BrowserModule,
