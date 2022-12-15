@@ -1,87 +1,44 @@
-<nav class="navbar navbar-expand-lg bg-success">
+<nav class="navbar navbar-expand-lg bg-success navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Security</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/securityviewprofile">View profile</a>
+        </li>
 
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/viewsecurityemplog">Employee log</a>
+        </li>
 
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/securityview">View employee log</a>
+        </li>
 
-    <div class="container-fluid">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/securityview">View daily employee log</a>
+        </li>
 
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/visitorlog">Visitor log</a>
+        </li>
 
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/viewvisitorlog">View visitor log</a>
+        </li>
 
-      <a class="navbar-brand" routerLink="/"><h1>NestDigital Employee Portal</h1></a>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dailyvisitorlog">View daily visitor log</a>
+        </li>
 
-
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-
-
-
-        <span class="navbar-toggler-icon"></span>
-
-
-
-      </button>
-
-
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-
-
-
-        <ul class="navbar-nav">
-
-
-
-          <li class="nav-item">
-
-
-
-            <a class="nav-link active" aria-current="page" routerLink="/addsecurity">Add Security </a>
-
-
-          </li>
-          <li class="nav-item">
-
-
-
-            <a class="nav-link active" aria-current="page" routerLink="/searchsecurity">Search security</a>
-
-
-          </li>
-          <li class="nav-item">
-
-
-
-            <a class="nav-link active" aria-current="page" routerLink="/viewallsecurity">View All security</a>
-
-
-          </li>
-          <li class="nav-item">
-
-
-            
-            <a class="nav-link active" aria-current="page" routerLink="/navadmin">Back </a>
-
-
-          </li>
-          
-
-          <form class="d-flex" role="search">
-
-
-
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-
-
-
-            <button class="btn btn-outline-light" type="submit">Search</button>
-
-
-
-          </form>
-
-
-
-        </ul>
-      </div>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/securitylogin">Logout</a>
+        </li>
+       
+      </ul>
     </div>
+  </div>
 </nav>
-

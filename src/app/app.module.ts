@@ -21,7 +21,17 @@ import { EmploginComponent } from './emplogin/emplogin.component';
 import { SecurityloginComponent } from './securitylogin/securitylogin.component';
 import { EmpviewprofileComponent } from './empviewprofile/empviewprofile.component';
 import { SecurityviewprofileComponent } from './securityviewprofile/securityviewprofile.component';
-import { NavemployeeComponent } from './navemployee/navemployee.component'
+import { NavemployeeComponent } from './navemployee/navemployee.component';
+import { ApplyleaveComponent } from './applyleave/applyleave.component';
+import { LeavestatusComponent } from './leavestatus/leavestatus.component';
+import { ViewleaveapplicationComponent } from './viewleaveapplication/viewleaveapplication.component';
+import { ViewemplogComponent } from './viewemplog/viewemplog.component';
+import { ViewdailyemplogComponent } from './viewdailyemplog/viewdailyemplog.component';
+import { ViewvisitorlogComponent } from './viewvisitorlog/viewvisitorlog.component';
+import { ViewdailyvisitorlogComponent } from './viewdailyvisitorlog/viewdailyvisitorlog.component';
+import { ViewsecurityemplogComponent } from './viewsecurityemplog/viewsecurityemplog.component';
+import { SecurityviewComponent } from './securityview/securityview.component';
+
 const myRoute:Routes=[
   {
     path:"",
@@ -77,7 +87,44 @@ component:EmploginComponent
 {
   path:"securityviewprofile",
   component:SecurityviewprofileComponent
+},
+{
+  path:"applyleave",
+  component:ApplyleaveComponent
+},
+{
+  path:"leavestatus",
+  component:LeavestatusComponent
+},
+{
+  path:"viewallleave",
+  component:ViewleaveapplicationComponent
+},
+{
+  path:"viewEmployeeLog",
+  component:ViewemplogComponent
+},
+{
+  path:"viewdailyemplog",
+  component:ViewdailyemplogComponent
+},
+{
+  path:"viewvisitorlog",
+  component:ViewvisitorlogComponent
+},
+{
+  path:"viewdailyvisitor",
+  component:ViewdailyvisitorlogComponent
+},
+{
+  path:"viewsecurityemplog",
+  component:ViewsecurityemplogComponent
+},
+{
+  path:"securityview",
+  component:SecurityviewComponent
 }
+
 
 ]
 @NgModule({
@@ -98,7 +145,17 @@ component:EmploginComponent
     SecurityloginComponent,
     EmpviewprofileComponent,
     SecurityviewprofileComponent,
-    NavemployeeComponent
+    NavemployeeComponent,
+    ApplyleaveComponent,
+    LeavestatusComponent,
+    ViewleaveapplicationComponent,
+    ViewemplogComponent,
+    ViewdailyemplogComponent,
+    ViewvisitorlogComponent,
+    ViewdailyvisitorlogComponent,
+    ViewsecurityemplogComponent,
+    SecurityviewComponent
+    
   ],
   imports: [
     BrowserModule,

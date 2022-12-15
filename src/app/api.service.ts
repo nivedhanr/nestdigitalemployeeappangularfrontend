@@ -39,12 +39,50 @@ userLogin=(datatosend: any)=>{
   
   return this.http.post("http://localhost:8080/userlogin", datatosend)
 }
+securityLogin=(datatosend: any)=>{
+  
+  return this.http.post("http://localhost:8080/securitylogin", datatosend)
+}
+
 getProfileDetails=(datatosend:any)=>{
   return this.http.post("http://localhost:8080/viewprofile",datatosend)
 }
 getsecurityProfileDetails=(datatosend:any)=>{
   return this.http.post("http://localhost:8080/viewsecurityprofile",datatosend)
 }
-
-
+applyLeave=(datatosend:any)=>{
+  return this.http.post("http://localhost:8080/addleave",datatosend)
+}
+leaveStatus=(dataToSend:any)=>
+{
+  return this.http.post("http://localhost:8080/updatestatus",dataToSend)
+}
+viewLeave=()=>
+{
+  return this.http.get("http://localhost:8080/viewallleaves")
+}
+viewEmployeeLog=()=>
+{
+  return this.http.get("http://localhost:8080/viewAllEmployeeLog")
+}
+viewDailyEmployeeLog=(dataToSend:any)=>
+{
+  return this.http.post("http://localhost:8080/viewDailyEmployeeLog",dataToSend)
+}
+viewVisitorLog=()=>
+{
+  return this.http.get("http://localhost:8080/viewAllVisitorLog")
+}
+viewDailyVisitorLog=(dataToSend:any)=>
+{
+  return this.http.post("http://localhost:8080/viewDailyVisitorLog",dataToSend)
+}
+addEmployeeLog=(dataToSend:any)=>
+{
+  return this.http.post("http://localhost:8080/logEmployee",dataToSend)
+}
+viewEmployeeLog1=()=>
+  {
+    return this.http.get("http://localhost:8080/viewAllEmployeeLog")
+  }
 }

@@ -16,7 +16,7 @@ export class SecurityloginComponent {
   {
     let data:any={"email":this.email,"password":this.password}
     console.log(data)
-    this.api.userLogin(data).subscribe(
+    this.api.securityLogin(data).subscribe(
       (response:any)=>{
         this.email=""
         this.password=""
