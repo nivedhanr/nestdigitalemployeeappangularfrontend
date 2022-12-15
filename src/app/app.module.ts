@@ -16,7 +16,8 @@ import { Navadmin1Component } from './navadmin1/navadmin1.component';
 import { Navadmin2Component } from './navadmin2/navadmin2.component';
 import { DeleteempComponent } from './deleteemp/deleteemp.component';
 import { ViewallempComponent } from './viewallemp/viewallemp.component';
-import { ViewallsecurityComponent } from './viewallsecurity/viewallsecurity.component'
+import { ViewallsecurityComponent } from './viewallsecurity/viewallsecurity.component';
+import { EmploginComponent } from './emplogin/emplogin.component'
 const myRoute:Routes=[
   {
     path:"",
@@ -56,8 +57,11 @@ component:NavadminComponent
 {
   path:"viewallsecurity",
   component:ViewallsecurityComponent
+},
+{
+path:"emplogin",
+component:EmploginComponent
 }
-
 
 ]
 @NgModule({
@@ -73,7 +77,8 @@ component:NavadminComponent
     Navadmin2Component,
     DeleteempComponent,
     ViewallempComponent,
-    ViewallsecurityComponent
+    ViewallsecurityComponent,
+    EmploginComponent
   ],
   imports: [
     BrowserModule,
