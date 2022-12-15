@@ -26,4 +26,19 @@ export class SearchsecurityComponent {
       }
     )
   }
+
+  deleteBtn=(id:any)=>{
+    let data:any={ "id":id}
+    this.api.deletesecurity(data).subscribe(
+      (reponse:any)=>{
+        console.log(reponse)
+        if (reponse.status=="success") {
+          alert("deleted successfully")
+          this.readValues=[]
+        }else{
+          alert("Invalid input")
+        }
+      }
+    )
+  }
 }

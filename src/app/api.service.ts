@@ -23,4 +23,10 @@ searchsecurity=(datatosend:any)=>
 {
   return this.http.post("http://localhost:8080/searchsecurity",datatosend)
 }
+deleteemp=(datatosend:any)=>{
+  return this.http.post("http://localhost:8080/delete",datatosend)
+}
+deletesecurity=(datatosend:any)=>{
+  return this.http.post("http://localhost:8080/deletesecurity",datatosend)
+}
 }
