@@ -32,5 +32,8 @@ deletesecurity=(datatosend:any)=>{
 viewallemp=()=>{
   return this.http.get("http://localhost:8080/viewemp")
 }
+viewallsecurity=()=>{
+  return this.http.get("http://localhost:8080/viewsecurity")
+}
 
 }
