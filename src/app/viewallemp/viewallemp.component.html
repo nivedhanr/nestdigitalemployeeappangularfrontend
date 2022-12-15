@@ -1,0 +1,64 @@
+<app-navadmin1></app-navadmin1>
+<div class="container">
+<div class="row" >
+
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                <table class="table">
+
+                    <thead>
+
+                      <tr>
+
+                        <th scope="col">Employee Name</th>
+
+                        <th scope="col">Designation</th>
+
+                        <th scope="col">Address</th>
+
+                        <th scope="col">Salary</th>
+                        <th scope="col">Phone No</th>
+                        <th scope="col">Email Id</th>
+                        <th scope="col">Username</th>
+
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                      <tr *ngFor="let i of data">
+
+                        <td>{{i.empname}}</td>
+
+                        <td>{{i.designation}}</td>
+
+                        <td>{{i.address}}</td>
+
+                        <td>{{i.salary}}</td>
+                        <td>{{i.phnno}}</td>
+                        <td>{{i.email}}</td>
+                        <td>{{i.username}}</td>
+                      </tr>
+
+                     
+
+                    </tbody>
+
+                  </table>
+
+
+
+
+        </div>
+
+
+
+        </div>
+
+
+
+</div>
+
+    
+

@@ -14,7 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavadminComponent } from './navadmin/navadmin.component';
 import { Navadmin1Component } from './navadmin1/navadmin1.component';
 import { Navadmin2Component } from './navadmin2/navadmin2.component';
-import { DeleteempComponent } from './deleteemp/deleteemp.component'
+import { DeleteempComponent } from './deleteemp/deleteemp.component';
+import { ViewallempComponent } from './viewallemp/viewallemp.component'
 const myRoute:Routes=[
   {
     path:"",
@@ -46,6 +47,10 @@ component:NavadminComponent
 {
   path:"navadmin2",
   component:Navadmin2Component
+},
+{
+  path:"viewallemp",
+  component:ViewallempComponent
 }
 
 
@@ -61,7 +66,8 @@ component:NavadminComponent
     NavadminComponent,
     Navadmin1Component,
     Navadmin2Component,
-    DeleteempComponent
+    DeleteempComponent,
+    ViewallempComponent
   ],
   imports: [
     BrowserModule,
