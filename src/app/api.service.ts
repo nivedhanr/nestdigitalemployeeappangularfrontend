@@ -39,5 +39,12 @@ userLogin=(datatosend: any)=>{
   
   return this.http.post("http://localhost:8080/userlogin", datatosend)
 }
+getProfileDetails=(datatosend:any)=>{
+  return this.http.post("http://localhost:8080/viewprofile",datatosend)
+}
+getsecurityProfileDetails=(datatosend:any)=>{
+  return this.http.post("http://localhost:8080/viewsecurityprofile",datatosend)
+}
+
 
 }
