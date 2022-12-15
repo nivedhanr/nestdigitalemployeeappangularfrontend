@@ -35,5 +35,9 @@ viewallemp=()=>{
 viewallsecurity=()=>{
   return this.http.get("http://localhost:8080/viewsecurity")
 }
+userLogin=(datatosend: any)=>{
+  
+  return this.http.post("http://localhost:8080/userlogin", datatosend)
+}
 
 }
