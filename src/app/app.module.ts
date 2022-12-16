@@ -143,8 +143,11 @@ component:EmploginComponent
 {
   path:"viewdailyvisitorlog",
   component:Viewdailyvisitorlog1Component
+},
+{
+  path:"leavestatus",
+  component:LeavestatusComponent
 }
-
 
 ]
 @NgModule({

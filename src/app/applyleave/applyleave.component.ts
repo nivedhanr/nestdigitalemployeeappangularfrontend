@@ -7,14 +7,16 @@ import { ApiService } from '../api.service';
   styleUrls: ['./applyleave.component.css']
 })
 export class ApplyleaveComponent {
-  empId=""
+  empId:any=""
   type=""
   remarks=""
   fromDate=""
   toDate=""
   applyDate=""
   
-  constructor(private api:ApiService){}
+  constructor(private api:ApiService){
+    this.empId=localStorage.getItem("userInfo")
+  }
   readValues=()=>
   {
     let data:any={"empId":this.empId,"type":this.type,"remarks":this.remarks,"fromDate":this.fromDate,"toDate":this.toDate,"applyDate":this.applyDate}

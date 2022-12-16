@@ -105,4 +105,8 @@ viewEmployeeLog1=()=>
   {
     return this.http.post("http://localhost:8080/updatestatus",dataToSend)
   }
+  searchStatus=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/searchstatus",dataToSend)
+  }
 }
