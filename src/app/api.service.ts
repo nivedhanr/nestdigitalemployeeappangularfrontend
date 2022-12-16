@@ -85,4 +85,20 @@ viewEmployeeLog1=()=>
   {
     return this.http.get("http://localhost:8080/viewAllEmployeeLog")
   }
+  viewDailyEmployeeLog1=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewDailyVisitorLog",dataToSend)
+  }
+  addVisitorLog=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/logVisitor",dataToSend)
+  }
+  viewVisitorLog1=()=>
+  {
+    return this.http.get("http://localhost:8080/viewAllVisitorLog")
+  }
+  viewDailyVisitorLog1=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewDailyVisitorLog",dataToSend)
+  }
 }

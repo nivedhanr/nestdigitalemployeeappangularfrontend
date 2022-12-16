@@ -31,6 +31,10 @@ import { ViewvisitorlogComponent } from './viewvisitorlog/viewvisitorlog.compone
 import { ViewdailyvisitorlogComponent } from './viewdailyvisitorlog/viewdailyvisitorlog.component';
 import { ViewsecurityemplogComponent } from './viewsecurityemplog/viewsecurityemplog.component';
 import { SecurityviewComponent } from './securityview/securityview.component';
+import { ViewdailyemplogsecurityComponent } from './viewdailyemplogsecurity/viewdailyemplogsecurity.component';
+import { Viewvisitorlog2Component } from './viewvisitorlog2/viewvisitorlog2.component';
+import { ViewvisitorComponent } from './viewvisitor/viewvisitor.component';
+import { Viewdailyvisitorlog1Component } from './viewdailyvisitorlog1/viewdailyvisitorlog1.component';
 
 const myRoute:Routes=[
   {
@@ -123,6 +127,22 @@ component:EmploginComponent
 {
   path:"securityview",
   component:SecurityviewComponent
+},
+{
+  path:"viewdailyemplogsecurity",
+  component:ViewdailyemplogsecurityComponent
+},
+{
+  path:"viewvisitorlog2",
+  component:Viewvisitorlog2Component
+},
+{
+  path:"viewvisitor",
+  component:ViewvisitorComponent
+},
+{
+  path:"viewdailyvisitorlog",
+  component:Viewdailyvisitorlog1Component
 }
 
 
@@ -154,7 +174,11 @@ component:EmploginComponent
     ViewvisitorlogComponent,
     ViewdailyvisitorlogComponent,
     ViewsecurityemplogComponent,
-    SecurityviewComponent
+    SecurityviewComponent,
+    ViewdailyemplogsecurityComponent,
+    Viewvisitorlog2Component,
+    ViewvisitorComponent,
+    Viewdailyvisitorlog1Component
     
   ],
   imports: [
